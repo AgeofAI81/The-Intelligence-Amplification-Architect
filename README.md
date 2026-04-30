@@ -10,4 +10,4 @@ Open `index.html` directly in a browser.
 
 ## Deployment
 
-This repository includes a GitHub Pages workflow that deploys the static site from the repository root.
+This repository deploys to GitHub Pages at https://intelligenceamplification.github.io/.
