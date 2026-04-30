@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intelligence Amplification</title>
+    <meta
+      name="description"
+      content="Intelligence Amplification is a living booklet about extending human judgment with better systems, tools, and habits."
+    />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --ink: #111111;
+        --muted: #555555;
+        --faint: #777777;
+        --line: #d9d9d2;
+        --soft: #f6f6f2;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 18px;
+        line-height: 1.68;
+      }
+
+      a {
+        color: inherit;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.18em;
+      }
+
+      .page {
+        width: min(920px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 52px 0 80px;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 34px;
+      }
+
+      .kicker {
+        color: var(--muted);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-weight: 700;
+        line-height: 1.08;
+        margin: 0;
+      }
+
+      h1 {
+        font-family: Arial Black, Arial, Helvetica, sans-serif;
+        font-size: 64px;
+        letter-spacing: 0;
+        margin-top: 16px;
+        text-transform: uppercase;
+      }
+
+      .subtitle {
+        color: var(--muted);
+        font-size: 22px;
+        line-height: 1.45;
+        margin: 22px 0 0;
+        max-width: 760px;
+      }
+
+      .meta {
+        color: var(--faint);
+        display: flex;
+        flex-wrap: wrap;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        gap: 10px 18px;
+        margin-top: 28px;
+      }
+
+      nav {
+        border-bottom: 1px solid var(--line);
+        padding: 36px 0;
+      }
+
+      nav h2 {
+        font-size: 24px;
+      }
+
+      .toc {
+        columns: 2;
+        column-gap: 44px;
+        list-style-position: inside;
+        margin: 18px 0 0;
+        padding: 0;
+      }
+
+      .toc li {
+        break-inside: avoid;
+        margin: 0 0 9px;
+        padding-left: 0;
+      }
+
+      .toc span {
+        color: var(--faint);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+      }
+
+      main {
+        padding-top: 18px;
+      }
+
+      section {
+        border-bottom: 1px solid var(--line);
+        padding: 48px 0;
+        scroll-margin-top: 24px;
+      }
+
+      section:last-of-type {
+        border-bottom: 0;
+      }
+
+      .section-label {
+        color: var(--faint);
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        font-size: 38px;
+      }
+
+      h3 {
+        font-size: 24px;
+        margin-top: 28px;
+      }
+
+      p {
+        margin: 18px 0 0;
+        max-width: 760px;
+      }
+
+      .lead {
+        font-size: 22px;
+        line-height: 1.5;
+      }
+
+      .formula {
+        background: var(--soft);
+        border: 1px solid var(--line);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        margin: 24px 0 0;
+        padding: 18px 20px;
+      }
+
+      .note {
+        background: var(--soft);
+        border-left: 4px solid var(--ink);
+        margin-top: 24px;
+        padding: 18px 20px;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        padding-top: 28px;
+      }
+
+      @media (max-width: 720px) {
+        body {
+          font-size: 17px;
+        }
+
+        .page {
+          padding-top: 34px;
+        }
+
+        h1 {
+          font-size: 42px;
+        }
+
+        h2 {
+          font-size: 31px;
+        }
+
+        .subtitle,
+        .lead {
+          font-size: 20px;
+        }
+
+        .toc {
+          columns: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header id="top">
+        <div class="kicker">A living booklet</div>
+        <h1>Intelligence Amplification</h1>
+        <p class="subtitle">
+          A concise public text on how biological minds, digital intelligence, tools,
+          institutions, and habits can extend human judgment.
+        </p>
+        <div class="meta" aria-label="Book details">
+          <span>Static web edition</span>
+          <span>Text-only public edition</span>
+          <span>Anchored single-page version</span>
+        </div>
+      </header>
+
+      <nav aria-label="Table of contents">
+        <h2>Contents</h2>
+        <ol class="toc">
+          <li><a href="#what-is-intelligence">What is Intelligence?</a> <span>Section 1</span></li>
+          <li><a href="#what-is-amplification">What is Amplification?</a> <span>Section 2</span></li>
+          <li><a href="#amplification-in-practice">Amplification in Practice</a> <span>Section 3</span></li>
+          <li>
+            <a href="#humans-machines-dialectic">Humans, Machines, and The Dialectic of Intelligence</a>
+            <span>Section 4</span>
+          </li>
+          <li><a href="#policy-and-playbooks">Policy and Playbooks</a> <span>Section 5</span></li>
+          <li><a href="#actionable-insights">Afterthoughts, Actionable Insights and Tips</a> <span>Section 6</span></li>
+          <li><a href="#reflections">Reflections</a> <span>Section 7</span></li>
+          <li><a href="#civilizational-possibilities">At The Threshold: Civilizational Possibilities</a> <span>Section 8</span></li>
+          <li><a href="#authors-note">Author's Note</a> <span>Section 9</span></li>
+        </ol>
+      </nav>
+
+      <main>
+        <section id="what-is-intelligence">
+          <span class="section-label">Section 1</span>
+          <h2>What is Intelligence?</h2>
+          <p class="lead">
+            Intelligence is the ability to accomplish complex goals. It is not a static gift;
+            it is an evolving capability: the power to adapt, learn, and transform both ourselves
+            and our environment.
+          </p>
+          <p>
+            Human intelligence grew through tool use, increasingly capable cognitive architecture,
+            and symbolic language. Language allowed abstract reasoning, shared imagination, culture,
+            morality, and technology to compound across generations.
+          </p>
+          <p>
+            Artificial intelligence now mirrors that recursive ascent. Machines replicate and extend
+            specific cognitive functions, creating a new layer in the long story of intelligence.
+            Collective intelligence and augmented intelligence emerge when humans, institutions,
+            and machines collaborate toward shared understanding.
+          </p>
+        </section>
+
+        <section id="what-is-amplification">
+          <span class="section-label">Section 2</span>
+          <h2>What is Amplification?</h2>
+          <p class="lead">
+            If intelligence is the engine, amplification is the force that boosts capability,
+            sharpens decisions, accelerates learning, and broadens problem-solving horizons.
+          </p>
+          <p>
+            Amplification can arise through technology, collaboration, education, or subtle shifts
+            in mental models. It is not about replacing human thought; it is about extending its
+            reach and precision.
+          </p>
+          <p>
+            Amplification is never neutral. It magnifies what exists, whether insight or ignorance,
+            empathy or exploitation. The question is not whether to amplify, but how to aim that
+            power toward resilience and flourishing.
+          </p>
+        </section>
+
+        <section id="amplification-in-practice">
+          <span class="section-label">Section 3</span>
+          <h2>Amplification in Practice</h2>
+          <p class="lead">
+            Amplification happens whenever the right conditions allow human intelligence to do more
+            with less friction.
+          </p>
+          <div class="formula">IA = (E x T x M) - B</div>
+          <p>
+            E stands for Enablers, T for Technology, M for Mindset, and B for Barriers. Change any
+            of these variables, and you change how far intelligence can reach.
+          </p>
+          <p>
+            Enablers include education, governance, social capital, and financial literacy.
+            Technology is the lever. Mindset is the human multiplier. Barriers are the friction:
+            inequality, distraction, misinformation, biased design, and cognitive overload.
+          </p>
+        </section>
+
+        <section id="humans-machines-dialectic">
+          <span class="section-label">Section 4</span>
+          <h2>Humans, Machines, and The Dialectic of Intelligence</h2>
+          <p class="lead">
+            The comparison between humans and powerful AI is not a contest. It is a dialectic.
+          </p>
+          <p>
+            Humans possess emotional depth, culture, intuition, and lived experience. Powerful AI
+            systems possess scale, speed, precision, and vast recall. Neither is complete on its
+            own; amplification emerges in their interplay.
+          </p>
+          <p>
+            The task is orchestration: aligning human wisdom with machine capability so the
+            amplification equation scales toward flourishing rather than fragmentation.
+          </p>
+        </section>
+
+        <section id="policy-and-playbooks">
+          <span class="section-label">Section 5</span>
+          <h2>Policy and Playbooks</h2>
+          <p class="lead">
+            If intelligence amplification is real, systems must be intentionally designed to
+            sustain it.
+          </p>
+          <p>
+            Policy is not merely bureaucracy. It is architecture: the invisible structure that
+            determines how intelligence can flow, compound, and be shared. Effective governance in
+            the age of augmented intelligence rests on alignment, access, and accountability.
+          </p>
+          <p>
+            Playbooks translate policy into practice. They help individuals and organizations use
+            AI as a thinking partner, clarify intention before automation, and preserve attention,
+            discernment, and emotional clarity.
+          </p>
+        </section>
+
+        <section id="actionable-insights">
+          <span class="section-label">Section 6</span>
+          <h2>Afterthoughts, Actionable Insights and Tips</h2>
+          <p class="lead">
+            This book is meant to be lived with, not merely read.
+          </p>
+          <p>
+            Think in systems. Every technology subtly shapes how you perceive the world, what you
+            notice, and how you make decisions. Choosing tools deliberately becomes a way of choosing
+            the mind you are cultivating.
+          </p>
+          <p>
+            Use AI recursively: summarize, test, simulate, and refine your understanding. Collaborate
+            whenever possible, because shared inquiry multiplies feedback. Reflect frequently, because
+            reflection converts experience into wisdom.
+          </p>
+        </section>
+
+        <section id="reflections">
+          <span class="section-label">Section 7</span>
+          <h2>Reflections</h2>
+          <p class="lead">
+            Amplification is not about machines replacing humanity; it is about humanity rediscovering
+            the deeper range of its own potential.
+          </p>
+          <p>
+            We stand at a threshold where tools extend reasoning and networks synchronize cognition
+            across space and time. The future will belong to those who amplify wisely: those who
+            combine depth with scale, creativity with clarity, and speed with discernment.
+          </p>
+          <p>
+            If intelligence is the engine and amplification the turbocharger, then wisdom is the
+            steering wheel.
+          </p>
+        </section>
+
+        <section id="civilizational-possibilities">
+          <span class="section-label">Section 8</span>
+          <h2>At The Threshold: Civilizational Possibilities</h2>
+          <p class="lead">
+            This section is reserved for the visual sequence in the illustrated book.
+          </p>
+          <p>
+            The static web edition leaves the artwork out for now. The anchor remains here so the
+            public text preserves the full structure of the book without carrying large image files.
+          </p>
+          <p class="note">
+            Future version: link this section to the complete illustrated edition when you are ready
+            to publish the artwork.
+          </p>
+        </section>
+
+        <section id="authors-note">
+          <span class="section-label">Section 9</span>
+          <h2>Author's Note</h2>
+          <p class="lead">
+            This is not a static book in the conventional sense. It is a living book, an evolving
+            artifact.
+          </p>
+          <p>
+            The work is designed to mark a specific moment in history: the early days of powerful
+            artificial intelligence. It will be updated gradually as new insights and new realities
+            emerge.
+          </p>
+          <p>
+            The central commitment remains simple: build better systems and cultivate better versions
+            of ourselves, not only for our own benefit, but for the benefit of all sentient beings
+            and the future of humanity.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          Intelligence Amplification. Static web edition. <a href="#top">Back to top.</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
