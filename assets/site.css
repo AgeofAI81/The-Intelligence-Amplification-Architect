@@ -86,3 +86,8 @@
 
 /* A familiar highlighter yellow, intentionally distinct from the IA signal green. */
 .chapters .formula{background:#ffeb3b;color:#111}
+
+/* The closing invitation echoes the same calm blue field as the opening premise. */
+.contact{background:var(--blue-wash)}
+.contact .section-number{color:var(--blue)}
+.contact .button.dark:hover,.contact .button.dark:focus{background:var(--blue);border-color:var(--blue)}
