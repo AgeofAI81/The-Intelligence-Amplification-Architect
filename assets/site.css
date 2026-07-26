@@ -83,3 +83,6 @@
   .hero{background:linear-gradient(180deg,#0d0f10 0%,#0d0f10 68%,#142128 100%)}
   .book-cover{box-shadow:10px 16px 0 #1b303b,0 28px 60px rgba(0,0,0,.44)}
 }
+
+/* A familiar highlighter yellow, intentionally distinct from the IA signal green. */
+.chapters .formula{background:#ffeb3b;color:#111}
