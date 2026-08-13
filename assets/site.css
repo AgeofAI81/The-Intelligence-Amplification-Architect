@@ -103,9 +103,9 @@
 .benchmark-list article>span{color:var(--muted);font-size:11px;padding-top:8px}
 .benchmark-list h3{font-size:clamp(25px,2.5vw,38px);font-weight:560;line-height:1.05;margin:0}
 .benchmark-list p{color:var(--muted);font-size:16px;margin:12px 0 0;max-width:720px}
-.benchmark-list .benchmark-primary{background:var(--blue-wash);border:0;margin-top:22px;padding:38px 32px}
 .benchmark-kicker{color:var(--blue)!important;font-size:10px!important;font-weight:700;margin:0 0 12px!important;text-transform:uppercase}
 .capability-test{background:#111;color:#fff}
+.capability-test>h2{font-size:clamp(32px,4.5vw,62px);font-weight:620;line-height:1;margin:0 0 clamp(58px,7vw,96px);text-align:center}
 .question-comparison{display:grid;gap:clamp(46px,8vw,120px);grid-template-columns:1fr 1fr}
 .question-comparison>div+div{border-left:1px solid #444;padding-left:clamp(32px,5vw,80px)}
 .question-comparison span{color:#aaa;font-size:11px;font-weight:650;text-transform:uppercase}
@@ -124,7 +124,6 @@
 @media(max-width:760px){
   .framework,.operating-model,.outcomes{grid-template-columns:1fr}
   .framework blockquote,.benchmark-list{grid-column:1;grid-row:auto}
-  .benchmark-list .benchmark-primary{margin-inline:-20px;padding:34px 20px}
   .question-comparison{grid-template-columns:1fr}
   .question-comparison>div+div{border-left:0;border-top:1px solid #444;padding-left:0;padding-top:42px}
   .role-columns{grid-template-columns:1fr}
@@ -133,6 +132,5 @@
 }
 @media(prefers-color-scheme:dark){
   .capability-test{background:#090b0b}
-  .benchmark-list .benchmark-primary{background:var(--blue-wash)}
   .question-comparison>div:last-child span{color:var(--blue)}
 }
